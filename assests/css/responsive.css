@@ -1,0 +1,124 @@
+/* mobile  and tablet */
+@media (max-width:1023px) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }   
+    .content-tablet-mobile {
+        /* flex-direction: column; */
+        margin: 0 10px;
+       }
+       .post-center {
+           padding: 0 12px;
+       }
+       .sub-header__socials {
+           order:2;
+       }
+       .sub-header__logo-link {
+           flex: 1;
+           margin-top: 10px;
+       }
+      
+       .sub-header__right {
+           order: 3;
+           margin-right: 16px;
+       }
+       .post-item__about {
+           margin-bottom: 30px;
+       }
+       .btn {
+           margin-bottom: 40px;
+           text-align: center;
+       }
+       .about-box {
+           margin: 0 20px;
+       }
+       .about__box-content-img-item {
+           object-fit: contain;
+       }
+       .slider2__wrap {
+           flex-direction: column;
+           margin:0 10px;
+       }
+       .worldwide {
+           margin:0 20px;
+       }
+       .subscribe p {
+           margin: 0;
+       }
+    }
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .sub-header__logo {
+        width: 200px;
+    }
+    .content-tablet-mobile {
+        margin: 0 10px;
+    }
+    .slider-wrap__box {
+        margin: 0 20px;
+    }
+    .about__box-content-img {
+        padding-bottom: 46px;
+        padding-top: 10px;
+    }
+    .slider2 {
+        padding-top: 60px ;
+        padding-bottom: 70px;
+    }
+    
+}
+
+/* mobile */
+@media (max-width:739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .sub-header__logo {
+        width: 120px;
+    }
+    .content-tablet-mobile {
+        margin: 0 2px;
+    }
+    .slider-wrap__box {
+        margin: 0 16px;
+    }
+    .about__box-content-img {
+        padding-bottom:0 ;
+        padding-top: 0;
+    }
+    .post-item__about-select {
+        margin-left: 0;
+    }
+    .slider2 {
+        padding-top: 50px;
+        padding-bottom: 20px ;
+    }
+    .post-item__select {
+        flex-direction: column;
+    }
+    .post-item__img-select-item {
+        width: 100%;
+        height: 100%;
+    }
+    .post-item__about-text {
+        display: none;
+    }
+    .post-item__title {
+        font-size: 2.2rem;
+    }
+    .post-details {
+        margin-bottom: 88px;
+    }
+    .subscribe-input {
+        margin-bottom:20px;
+        width: 100%;
+    }
+    .subscribe__btn {
+       width: 100%;
+    }
+}
+

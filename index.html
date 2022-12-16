@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assests/css/hyperbase.css">
+    <link rel="stylesheet" href="./assests/css/grid.css">
+    <link rel="stylesheet" href="./assests/css/hyper.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
+    <link rel="styleseet" href="./assests/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/img/logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Hypter</title>
+</head>
+<body>
+      <div class="main">
+          <div class="news">
+              <p class="news__text"><span class="news__box">NEW!</span>
+                  Breaking news - U.S., China Move on From Year of the Spat: Global Economy Week !
+                  <span class="news__mores">Read More<i class="fas fa-chevron-right"></i></span>
+              </p>
+          </div>
+
+        <header class="header hide-on-tablet-mobile">
+            <div class="wide">
+                <div class="nav ">
+                      <ul class="nav__list">
+                          <li class="nav__item"><a class="nav__item-link" href="">About</a></li>
+                          <li class="nav__item"><a class="nav__item-link" href="">Contact</a></li>
+                          <li class="nav__item"><a class="nav__item-link" href="">Buy theme</a></li>
+                      </ul>
+                      <ul class="nav__list">
+                          <li class="nav__item"><a class="nav__item-link" href=""><i class="nav__item-icon fas fa-chevron-circle-right"></i>Subcribe</a></li>
+                          <li class="nav__item"><a class="nav__item-link" href=""><i class="nav__item-icon fas fa-chevron-circle-right"></i>Advert</a></li>
+                          <li class="nav__item">
+                              
+                              <!-- login -->
+                              <input type="checkbox" id="check-input" class="modal-check">
+                              <label for="check-input" class="nav__item-link" ><i class="nav__item-icon fas fa-sign-in-alt"></i>Login</label>
+
+                              <label for="check-input" class="nav-modal"></label>
+                                <div class="nav-container">
+                                  <!-- <label for="check-input"  class="close-icon"><i class="fas fa-times"></i></label> -->
+                                    <div class="nav-overlay__container-header">
+                                            <button class="nav-overlay__container-header-btn">
+                                                <i class="nav-overlay__icon fas fa-sign-in-alt"></i>Sign in
+                                            </button>
+                                            <button class="nav-overlay__container-header-btn disabled--btn">
+                                                <i class="nav-overlay__icon fas fa-user-plus"></i>Register
+                                            </button>
+                                        </div>
+                                            
+                                    <div class="nav-overlay__body">
+                                        <form action="">
+                                            <div class="nav-overlay__form-wraper">
+                                                    <i class="nav-overlay__form-icon far fa-envelope"></i>
+                                                    <input type="email"placeholder="Email or Username"require class="form-input">
+                                            </div>
+                                            <div class="nav-overlay__form-wraper">
+                                                    <i class="nav-overlay__form-icon fas fa-lock"></i>
+                                                    <input type="password"placeholder="Password"require class="form-input">
+                                            </div>
+                                            <div class="nav-overlay__form-remember">
+                                                    <input type="checkbox"class="nav-overlay__form-check">Remember me
+                                            </div>
+                                        </form>
+                                            
+                                                <button class="nav-overlay__btn">Log in</button>
+                                                    <p class="nav-overlay__form-text">-OR-</p>
+                                    </div>
+                                    
+                                    <div class="nav-overlay__footer">
+                                        <ul class="nav-overlay__form-social-list">
+                                           <li> <a href="" class="nav-overlay__form-social-item nav-overlay__form-social-fb"><i class="nav-overlay__form-social-icon fab fa-facebook-square"></i>Continue with <strong >Facebook</strong></a> </li>
+                                           <li><a href="" class="nav-overlay__form-social-item nav-overlay__form-social-gg"><i class="nav-overlay__form-social-icon fab fa-google"></i>Continue with <strong> Google</strong></a> </li>
+                                           <li><a href="" class="nav-overlay__form-social-item nav-overlay__form-social-tw"><i class="nav-overlay__form-social-icon fab fa-twitter"></i>Continue with <strong>Twitter</strong> </a> </li>
+                                        </ul>
+                                    </div>    
+                                    
+                                        <a href="" class="forgot-pass__text">Forgot your password?</a>
+                                                   
+                                </div>
+                            </li>
+                                
+                           
+                          <li class="nav__item">
+                              
+                              <input type="checkbox" id="check-input-regis" class="modal-check-regis">
+                              <label for="check-input-regis" class="nav-item-link">
+                                 <i class="nav__item-icon far fa-user"></i>Register
+                              </label>
+                             <label for="check-input-regis" class="nav-modal-regis"></label>
+                              
+
+                              <div class="nav-container-regis">
+                                    <div class="nav-overlay__container-header">
+                                            <button class="nav-overlay__container-header-btn disabled--btn">
+                                                <i class="nav-overlay__icon fas fa-sign-in-alt"></i>Sign in
+                                            </button>
+                                            <button class="nav-overlay__container-header-btn ">
+                                                <i class="nav-overlay__icon fas fa-user-plus"></i>Register
+                                            </button>
+                                        </div>
+                                            
+                                    <div class="nav-overlay__body">
+                                        <form action="">
+                                            <div class="nav-overlay__form-wraper">
+                                                    <i class="nav-overlay__form-icon far fa-envelope"></i>
+                                                    <input type="email"placeholder="Email or Username"require class="form-input">
+                                            </div>
+                                            <div class="nav-overlay__form-wraper">
+                                                    <i class="nav-overlay__form-icon fas fa-lock"></i>
+                                                    <input type="password"placeholder="Password"require class="form-input">
+                                            </div>
+                                            <div class="nav-overlay__form-wraper">
+                                                <i class="nav-overlay__form-icon fas fa-lock"></i>
+                                                <input type="password"placeholder="Re-Password"require class="form-input">
+                                        </div>
+                                            <div class="nav-overlay__form-remember">
+                                                    <input type="checkbox"class="nav-overlay__form-check">Remember me
+                                            </div>
+                                        </form>
+                                            
+                                                <button class="nav-overlay__btn">Register</button>
+                                                    <p class="nav-overlay__form-text">-OR-</p>
+                                    </div>
+                                    
+                                    <div class="nav-overlay__footer">
+                                        <ul class="nav-overlay__form-social-list">
+                                           <li> <a href="" class="nav-overlay__form-social-item nav-overlay__form-social-fb"><i class="nav-overlay__form-social-icon fab fa-facebook-square"></i>Continue with <strong >Facebook</strong></a> </li>
+                                           <li><a href="" class="nav-overlay__form-social-item nav-overlay__form-social-gg"><i class="nav-overlay__form-social-icon fab fa-google"></i>Continue with <strong> Google</strong></a> </li>
+                                           <li><a href="" class="nav-overlay__form-social-item nav-overlay__form-social-tw"><i class="nav-overlay__form-social-icon fab fa-twitter"></i>Continue with <strong>Twitter</strong> </a> </li>
+                                        </ul>
+                                    </div>    
+                                    
+                                                   
+                                    </div>
+                              
+                          </li>
+                      </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="sub-header">
+            <div class="grid wide">
+                <div class="sub-header__search">
+                    <div class="sub-header__socials c-0">
+                        <a href="" class="sub-header__social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="sub-header__social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="sub-header__social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="sub-header__social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                     
+
+                    <label for=""class="subnav-bar l-0">
+                        <i class="subnav-bar__icon fas fa-bars"></i>
+                    </label>
+                    <a href="" class="sub-header__logo-link">
+                        <img src="assests/img/logoimggg.png" alt="" class="sub-header__logo">
+                    </a>
+
+                   
+                  
+                    <div class="sub-header__right">
+                        <ul class="sub-header__right-list">
+
+                            <li class="sub-header__right-item">
+                                <input type="checkbox" id="check-search" class="input-search">
+                                <label for="check-search" href="" class="sub-header__right-link">
+                                    <i class="fas fa-search"></i>
+                                </label>
+                                <input type="text" placeholder="Search" class="sub-header__right-searching">
+                            </li>
+                            <!-- KHONG CO SAN PHAM// CLASS: sub-header__right--no-cart -->
+                            
+                            <li class="sub-header__right-item sub-header__right--no-cart">
+                                <input type="checkbox" id="check-cart" class="input-cart">
+                                <a href="" class="sub-header__right-link">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>    
+                                    
+                                    <ul class="sub-header__right-nocart-list">
+                                        <li class="sub-header__right-nocart-item"><i class=" sub-header__searching-cart-icon fas fa-shopping-cart"></i></li> 
+                                        <li class="sub-header__right-nocart-item"><span class="sub-header__nocart-message">No product in your cart</span></li>
+                                    </ul>   
+                            </li>
+                        </ul>
+                        
+
+                    </div>
+                              
+
+                              
+                                
+                               
+                                   
+                                    
+
+
+                                
+                     
+
+                </div>
+
+                <nav class="subnav c-0 m-0">
+                    <div class="subnav__wrap">
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a class="subnav__item-link" href="">Demos <i class="subnav__item-arrow-down-icon fas fa-chevron-down"></i></a>
+                                <ul class="sub__list">
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Home page  <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                        
+                                        <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Large Postthe Grid <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                   
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Large Overlay then Grid  <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Large Post then List <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Overlay then List <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Mixed Overlays <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Mixed Large then Grid <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Grid <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">List <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Classic <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Full width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Right width</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Left width</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="subnav__item">
+                                <a class="subnav__item-link" href="">Feartures <i class="subnav__item-arrow-down-icon  fas fa-chevron-down"></i></a>
+                                <ul class="sub__list">
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Gutenberg Styles  <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                        <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Gallery style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Video style<span class="parallax">PARALLAX</span></a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Audio Style</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Post layouts <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Gallery style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Video style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Audio Style</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Post formats <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Gallery style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Video style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Audio Style</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">11 Category layouts <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Gallery style<span class="parallax">PARALLAX</span></a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Video style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Audio Style</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Review post <span class="hot-hot">HOT</span><i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Gallery style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Video style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Audio Style</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Other archives <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Gallery style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Video style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Audio Style <span class="parallax">PARALLAX</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Pages <i class="sub__item-icon fas fa-angle-right"></i></a>
+                                       
+                                          <ul class="sub__list-child">
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Gallery style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Video style</a></li>
+                                            <li class="sub__item-child"><a class="sub__item-child-link" href="">Audio Style</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Shop/WooCommerce</a>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">InHype Shortcodes</a>
+                                    </li>
+                                    <li class="sub__item">
+                                        <a href="" class="sub__item-link">Author page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="subnav__item">
+                                <a class="subnav__item-link" href="">Politics <i class="subnav__item-arrow-down-icon  fas fa-chevron-down"></i></a>
+                                
+                                <div class="subnav__item-wraper">
+                                    <h2 class="subnav__item-form-heading">Check this posts</h2>
+                                    <div class="subnav__item-form">
+                                          <div class="grid col l-3">
+                                            <div class="post">
+                                                <div class="post-item">
+                                                        <a href="" class="post-item__img-link">
+                                                            <img src="assests/img/citylondon.jpg" alt="" class="post-item__img-item">
+                                                            <div class="post-item__icon-note">
+                                                                <i class="post-item__icon far fa-image"></i> 
+                                                            </div>
+                                                        </a>
+                                                    <div class="post-item__about">
+                                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-business)" class="cat-dot"></span>business</a>
+                                                        <a href="" class=" post-item__title font16 line-height20 font16">The City of London Wants To Have Its Brexit Cake and Eat It Too</a>
+                                                        <span class="post-item__time">December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            <div class="grid col l-3">
+                                                  <div class="post">
+                                <div class="post-item">
+                                        <a href="" class="post-item__img-link">
+                                            <img src="assests/img/people.jpg" alt="" class="post-item__img-item">
+                                        </a>
+                                    <div class="post-item__about">
+                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                        <a href="" class="post-item__title font16 line-height20">What You Need to Know About 5G in 2020</a>
+                                        <span class="post-item__time">December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                                            <div class="grid col l-3">
+                                                <div class="post">
+                                                    <div class="post-item">
+                                                            <a href="" class="post-item__img-link">
+                                                                <img src="assests/img/lone.jpg" alt="" class="post-item__img-item">
+                                                                <div class="post-item__icon-note">
+                                                                    <i class="fas fa-play"></i>
+                                                                </div>
+                                                            </a>
+                                                        <div class="post-item__about">
+                                                            <a href="" class="post-item__note"><span style="background-color:var(--catdot-video)" class="cat-dot"></span>video</a>
+                                                            <a href="" class="post-item__title font16 line-height20 ">Middle Age Misery Peaks at Age of 47.2, Economist Says</a>
+                                                            <span class="post-item__time"><span class="post-info-dot"></span> December 3, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid col l-3">
+                                                <div class="post">
+                                                    <div class="post-item">
+                                                        <a href="" class="post-item__img-link">
+                                                            <img src="assests/img/nguoi.jpg" alt="" class="post-item__img-item">
+                                                            <div class="post-item__icon-note post-item__icon-note-number">
+                                                                <p>8.2</p>  
+                                                            </div>
+                                                        </a>
+                                                        <div class="post-item__about">
+                                                            <div class="post-item__note-box">
+                                                                <a href="" class="post-item__note"><span style="background-color:var(--catdot-markets)" class="cat-dot"></span>markets</a>
+                                                                <a href="" class="post-item__note"><span style="background-color:var(--catdot-politics)" class="cat-dot"></span>politics</a>
+                                                            </div>
+                                                                
+                                                            <a href="" class="post-item__title font16 line-height20">What to Do if You Overspent During the Holidays</a>
+                                                            <span class="post-item__time">December 2, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                
+
+                                <li class="subnav__item"><a class="subnav__item-link" href="">World news <span class="hot-hot">HOT</span> </a></li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="">Business</a></li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="">About</a></li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="">Contact</a></li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="">Subscribe</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <div class="wide">
+                <div class="row content-tablet-mobile">
+                    <div class="grid col l-3 m-12 c-12">
+                        <div class="post">
+                            <div class="post-item">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/citylondon.jpg" alt="" class="post-item__img-item">
+                                        <div class="post-item__icon-note">
+                                            <i class="post-item__icon far fa-image"></i> 
+                                        </div>
+                                    </a>
+                                <div class="post-item__about">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-business)" class="cat-dot"></span>business</a>
+                                    <a href="" class="post-item__title">The City of London Wants To Have Its Brexit Cake and Eat It Too</a>
+                                    <span class="post-item__time">December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                </div>
+                            </div>
+                         </div>
+    
+                        <div class="post">
+                            <div class="post-item">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/people.jpg" alt="" class="post-item__img-item">
+                                    </a>
+                                <div class="post-item__about">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                    <a href="" class="post-item__title">What You Need to Know About 5G in 2020</a>
+                                    <span class="post-item__time">December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="grid col l-6 m-12 c-12 post-center">
+                        <div class="post">
+                            <div class="post-item">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/lone.jpg" alt="" class="post-item__img-item">
+                                        <div class="post-item__icon-note">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </a>
+                                <div class="post-item__about">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-video)" class="cat-dot"></span>video</a>
+                                    <a href="" class="post-item__title post-item__title--font30">Middle Age Misery Peaks at Age of 47.2, Economist Says</a>
+                                    <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span> December 3, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                    <p class="post-item__about-text">
+                                        We are looking beyond ideation stage to, at the very least, beta, and for companies that are corporate-ready. Retailers want to see…
+                                    </p>
+                                </div>
+                                <a class="btn hide-on-mobile ">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid col l-3 m-12 c-12">
+                        <div class="post">
+                            <div class="post-item">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/nguoi.jpg" alt="" class="post-item__img-item">
+                                        <div class="post-item__icon-note post-item__icon-note-number">
+                                           <p>8.2</p>  
+                                        </div>
+                                    </a>
+                                <div class="post-item__about">
+                                    <div class="post-item__note-box">
+                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-markets)" class="cat-dot"></span>markets</a>
+                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-politics)" class="cat-dot"></span>politics</a>
+    
+                                    </div>
+                                    <a href="" class="post-item__title">What to Do if You Overspent During the Holidays</a>
+                                    <span class="post-item__time">December 2, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="post">
+                            <div class="post-item">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/oke.jpg" alt="" class="post-item__img-item">
+                                        <div class="post-item__icon-note">
+                                            <i class="fas fa-play"></i> 
+                                        </div>
+                                    </a>
+                                <div class="post-item__about">
+                                    <div class="post-item__note-box">
+                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-business)" class="cat-dot"></span>business</a>
+                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-video)" class="cat-dot"></span>video</a>
+    
+                                    </div>
+                                    <a href="" class="post-item__title">What to Expect From the 2020 Oscar Nominations</a>
+                                    <span class="post-item__time">December 1, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+            
+            
+            </div>
+                   
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+        </div>
+        <div class="slider">
+            <div class="grid wide">
+                <div class="slider-wrap">
+                  <div class="slider-wrap__box">
+                      <div class="slider-wrap__note">
+    
+                          <div class="post-item__about">
+                              <div class="post-item__note-box">
+                                  <a href="" class="post-item__note"><span style="background-color:var(--catdot-markets)" class="cat-dot"></span>markets</a>
+                                  <a href="" class="post-item__note"><span style="background-color:var(--catdot-politics)" class="cat-dot"></span>politics</a>
+                              </div>
+                                  
+                              <a href="" class="post-item__title font16 line-height20">What to Do if You Overspent During the Holidays</a>
+                              <span class="post-item__time">December 2, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                          </div>
+    
+                      </div>
+                      <div class="slider-wrap__img">
+                          <a href="" class="slider-wrap__img-link c-0">
+                              <img src="assests/img/daylaanh.jpg" alt="" class="slider-wrap__img-item">
+                          </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about">
+             <div class=" wide">
+                <div class="about-box">
+                    <div class="about__header">
+                         <h3 class="about__header-title">Weekends</h3>
+                    </div>
+                        
+                <div class="row">
+                    <div class="col l-4">
+                      <div class="about__box-content">
+                           <div class="post">
+                               <div class="post-item">
+                                       <a href="" class="post-item__img-link">
+                                           <img src="assests/img/citylondon.jpg" alt="" class="post-item__img-item">
+                                           <div class="post-item__icon-note">
+                                               <i class="post-item__icon far fa-image"></i> 
+                                           </div>
+                                       </a>
+                                   <div class="post-item__about">
+                                       <a href="" class="post-item__note"><span style="background-color:var(--catdot-business)" class="cat-dot"></span>business</a>
+                                       <a href="" class="post-item__title  line-height20 ">The City of London Wants To Have Its Brexit Cake and Eat It Too</a>
+                                       <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span> December 3, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                       <p>Graduating from a top accelerator or incubator can be as career-defining for a startup founder as an elite university diploma. The intensive programmes, which…</p>
+                                    </div>
+                               </div>
+                            </div> 
+                        </div>
+                    </div>
+                        <div class="grid col l-4">
+                            <div class="post-item__about">
+                                <a href="" class="post-item__note  about__box-content-mg0"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                <a href="" class="post-item__title font18 line-height20">What You Need to Know About 5G in 2020</a>
+                                <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                            <div class="post-item__about">
+                                <div class="post-item__note-box">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-markets)" class="cat-dot"></span>markets</a>
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-politics)" class="cat-dot"></span>politics</a>
+                                </div>
+                                    
+                                <a href="" class="post-item__title font18 line-height20">What to Do if You Overspent During the Holidays</a>
+                                <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   December 2, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                            <div class="post-item__about">
+                                <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                <a href="" class="post-item__title font18 line-height20">The End of the Bonus Culture Is Coming to Wall Street</a>
+                                <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                            <div class="post-item__about">
+                                <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                <a href="" class="post-item__title font18 line-height20">China State Firm’s $6 Billion Loss Is Among Nation’s Worst Ever</a>
+                                <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                       </div>
+    
+                       <div class="grid col l-4">
+    
+                        <div class="post-item__about">
+                            <a href="" class="post-item__note about__box-content-mg0"><span style="background-color:var(--catdot-video)" class="cat-dot"></span>video</a>
+                            <a href="" class="post-item__title font18 line-height20 ">Middle Age Misery Peaks at Age of 47.2, Economist Says</a>
+                            <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   <span class="post-info-dot"></span> December 3, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                        </div>
+                        
+                        <div class="post-item__about">
+                            <div class="post-item__note-box">
+                                <a href="" class="post-item__note"><span style="background-color:var(--catdot-business)" class="cat-dot"></span>business</a>
+                                <a href="" class="post-item__note"><span style="background-color:var(--catdot-video)" class="cat-dot"></span>video</a>
+    
+                            </div>
+                            <a href="" class="post-item__title font18 line-height20">What to Expect From the 2020 Oscar Nominations</a>
+                            <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   December 1, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                        </div>
+    
+                        <div class="post-item__about">
+                            <div class="post-item__note-box">
+                                <a href="" class="post-item__note"><span style="background-color:var(--catdot-markets)" class="cat-dot"></span>markets</a>                           
+                            </div>
+                            <a href="" class="post-item__title font18 line-height20">Review: ‘The New Pope’ on HBO: Faith, Hope and Sponge Baths</a>
+                            <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   December 2, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                        </div>
+    
+                        <div class="post-item__about">
+                            <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                            <a href="" class="post-item__title font18 line-height20">How Trump Pushed the U.S. and Iran to the Brink of War</a>
+                            <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>   December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                        </div>
+                       </div>
+                        
+                     
+                    </div>
+                    <div class=" about__box-content-img">
+                        <img src="assests/img/subcribe.png" class="about__box-content-img-item" alt="">
+                    </div>
+                </div>
+    
+             </div>
+        </div>
+
+        <div class="about">
+            <div class="grid wide">
+                <div class="about-box">
+                    <div class="about__header">
+                        <h3 class="about__header-title">Selected</h3>
+                        <p class="about__header-subtitle">Best for you</p>
+                    </div>
+                    <div class="row ">
+                        
+                        <div class=" col l-7 ">
+                            <div class="post">
+                                <div class="post-item post-item__select">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/nguoi.jpg" alt="" class="post-item__img-select-item">
+                                        <div class="post-item__icon-note post-item__icon-note-number">
+                                            <p>8.2</p>  
+                                        </div>
+                                    </a>
+                                    <div class="post-item__about post-item__about-select">
+                                        <div class="post-item__note-box mgt-0">
+                                            <a href="" class="post-item__note"><span style="background-color:var(--catdot-markets)" class="cat-dot"></span>markets</a>
+                                            <a href="" class="post-item__note"><span style="background-color:var(--catdot-politics)" class="cat-dot"></span>politics</a>
+                                        </div>
+                                            
+                                        <a href="" class="post-item__title font18 line-height20">What to Do if You Overspent During the Holidays</a>
+                                        <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>December 2, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                        <p class="post-item__about-text">From there, we generally start working on visual concepts that can make that vision more tangible. Our stakeholders are often editors with…</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="post-item post-item__select">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/president.jpg" alt="" class="post-item__img-select-item">
+                                      
+                                    </a>
+                                    <div class="post-item__about post-item__about-select">
+                                        <div class="post-item__note-box mgt-0">
+                                            <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                        </div>
+                                            
+                                        <a href="" class="post-item__title font18 line-height20">The End of the Bonus Culture Is Coming to Wall Street</a>
+                                        <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>December 26, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                        <p class="post-item__about-text">The most important skill for a product leader is active listening. Be a good listener and you will naturally build trust across individuals,…</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="post-item post-item__select">
+                                    <a href="" class="post-item__img-link">
+                                        <img src="assests/img/art.jpg" alt="" class="post-item__img-select-item">
+                                        <div class="post-item__icon-note post-item__icon-note-number">
+                                            <p>8.7</p>  
+                                        </div>
+                                    </a>
+                                    <div class="post-item__about post-item__about-select">
+                                        <div class="post-item__note-box mgt-0">
+                                            <a href="" class="post-item__note"><span style="background-color:var(--catdot-markets)" class="cat-dot"></span>markets</a>
+                                        </div>
+                                            
+                                        <a href="" class="post-item__title font18 line-height20">Review: ‘The New Pope’ on HBO: Faith, Hope and Sponge Baths</a>
+                                        <span class="post-item__time">By <a href=""class="post-name">ThanhLong</a><span class="post-info-dot"></span>December 26, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                                        <p class="post-item__about-text">What matters is understanding the hows and whys of trends’ emergence and adoption. Because at the end of the day, trends have…</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="grid col l-5 ">
+                            <div class="post-details">
+                                <div class="post-details__img" style="background-image:url(assests/img/peoplepp.jpg);"></div>
+                                <div class="post-item__about post-details__about-select">
+                                    
+                                    <div class="post-item__note-box mgt-0">
+                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                    </div>
+                                    
+                                    <p class="post-details__title line-height25">
+                                        China State Firm’s $6 Billion Loss Is Among Nation’s Worst Ever
+                                    </p>
+                                    <span class="post-details__time">Sponsored<span class="post-info-dot"></span>5 Mins read</span>
+                                </div>
+                            </div>  
+                                
+                            <div class="post-details">
+                                <div class="post-details__img" style="background-image:url(assests/img/paylac.jpg);"></div>
+                                <div class="post-item__about post-details__about-select">
+                                    
+                                    <div class="post-item__note-box mgt-0">
+                                        <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                    </div>
+                                    
+                                    <p class="post-details__title line-height25">
+                                        How Trump Pushed the U.S. and Iran to the Brink of War
+                                    </p>
+                                    <span class="post-details__time">Sponsored<span class="post-info-dot"></span>5 Mins read</span>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider2">
+            <div class="wide">
+                <div class="row slider2__wrap">
+                <div class="col l-6 slider2__container">
+                    <div class="slider2__header">
+                        <h3 class="inhype-block-title">QuickTake</h3>
+                        <h4 class="slider2__header-subtitle">OUR BEST VIDEO STUFF</h3>
+                    </div>
+                        <div class="post-item__about-slider2">
+                            <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                            <h3 class="post-item__title-slider2 line-height20">Middle Age Misery Peaks at Age of 47.2, Economist Says    </h3>
+                            <span class="post-item__time">By <a href=""class="post-name-slider2">ThanhLong</a><span class="post-info-dot"></span>   December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                        </div>
+
+                        <div class="slider2__btn">
+                            <i class="slider2__btn-icon fas fa-arrow-left"></i>
+                            <i class="slider2__btn-icon fas fa-arrow-right"></i>
+                        </div>
+                </div>
+
+                    <div class="col l-6">
+                        <a href="" class="post-item__img-link">
+                            <img src="/assets/img/hoguom.jpg" alt="" class="post-item__img-item">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wide">
+            <div class="worldwide">
+                <div class="about__header">
+                    <h3 class="about__header-title">Worldwide News</h3>
+                    <p class="about__header-subtitle">WHERE ARE WE GOING</p>
+                </div>
+                <div class="row">
+                <div class="col l-4 m-6 c-12">
+                        <div class="post-details post-details__worldwide">
+                            <div class="post-details__img post-details__img-worldwide" style="background-image:url(assests/img/daylaanh.jpg);"></div>
+                            <div class="post-item__about  post-details__about-select post-details__title-worldwide">
+                                
+                                <div class="post-item__note-box mgt-0">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                </div>
+                                
+                                <p class="post-details__title line-height25">
+                                    What You Need to Know About 5G in 2020
+                                </p>
+                                <span class="post-details__time">December 10, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                        </div>  
+                    </div>
+                        
+                    <div class="col l-4 m-6 c-12">
+                        <div class="post-details">
+                            <div class="post-details__img post-details__img-worldwide" style="background-image:url(assests/img/paylac.jpg);"></div>
+                            <div class="post-item__about  post-details__about-select post-details__title-worldwide">
+                                
+                                <div class="post-item__note-box mgt-0">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                </div>
+                                
+                                <p class="post-details__title line-height25">
+                                    How Trump Pushed the U.S. and Iran to the Brink of War
+                                </p>
+                                <span class="post-details__time">Sponsored<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="post-details post-details__worldwide">
+                            <div class="post-details__img post-details__img-worldwide" style="background-image:url(assests/img/president.jpg);"></div>
+                            <div class="post-item__about  post-details__about-select post-details__title-worldwide">
+                                
+                                <div class="post-item__note-box mgt-0">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                </div>
+                                
+                                <p class="post-details__title line-height25">
+                                    The End of the Bonus Culture Is Coming to Wall Street
+                                </p>
+                                <span class="post-details__time">November 26, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="col l-4 m-6 c-12">
+                        <div class="post-details">
+                            <div class="post-details__img post-details__img-worldwide" style="background-image:url(assests/img/cars.jpg);"></div>
+                            <div class="post-item__about  post-details__about-select post-details__title-worldwide">
+                                
+                                <div class="post-item__note-box mgt-0">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                </div>
+                                
+                                <p class="post-details__title line-height25">
+                                    The End of the Bonus Culture Is Coming to Wall Street
+                                </p>
+                                <span class="post-details__time">November 26, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                        </div> 
+                    </div>
+    
+                    <div class="col l-4 m-6 c-12">
+                        <div class="post-details post-details__worldwide ">
+                            <div class="post-details__img post-details__img-worldwide" style="background-image:url(assests/img/messa.jpg);"></div>
+                            <div class="post-item__about  post-details__about-select post-details__title-worldwide">
+                                
+                                <div class="post-item__note-box mgt-0">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                </div>
+                                
+                                <p class="post-details__title line-height25">
+                                    The End of the Bonus Culture Is Coming to Wall Street
+                                </p>
+                                <span class="post-details__time">November 26, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                        </div> 
+                    </div>    
+                    <div class="col l-4 m-6 c-12">
+                        <div class="post-details ">
+                            <div class="post-details__img post-details__img-worldwide" style="background-image:url(assests/img/art.jpg);"></div>
+                            <div class="post-item__about  post-details__about-select post-details__title-worldwide">
+                                
+                                <div class="post-item__note-box mgt-0">
+                                    <a href="" class="post-item__note"><span style="background-color:var(--catdot-world)" class="cat-dot"></span>world</a>
+                                </div>
+                                
+                                <p class="post-details__title line-height25">
+                                    The End of the Bonus Culture Is Coming to Wall Street
+                                </p>
+                                <span class="post-details__time">November 26, 2019<span class="post-info-dot"></span>5 Mins read</span>
+                            </div>
+                        </div>  
+                    </div>
+                     
+                </div>
+            </div>
+
+        </div>
+        <div class="wide">
+            <!-- <div class="row"> -->
+                <div class="subscribe">
+                    <h3>Power your team with InHype</h3>
+                    <form action=""class="subscribe-form">
+                        <input type="email" name="" placeholder="Please enter your e-mail" class="subscribe-input">
+                        <button class="btn subscribe__btn">Subscribe</button>
+                    </form>
+                    <p>Add some text to explain benefits of subscripton on your services.</p>
+                </div>
+            <!-- </div> -->
+            </div>
+
+         <a class="message">
+            <i class="message-icon fas fa-envelope"></i>
+         </a>
+    </div>
+</body>
+</html>
+
+                                       
+
+                                    
